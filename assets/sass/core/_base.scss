@@ -505,6 +505,26 @@ p {
             line-height: 1.6;
         }
     }
+
+    @media(max-width: 991px) {
+        flex-wrap: wrap;
+
+        .login_form {
+            width: 100%;
+            order: 2;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .login__info {
+            order: 1;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 50px;
+            padding: 30px;
+            gap: 20px;
+        }
+    }
 }
 
 .button_table {
