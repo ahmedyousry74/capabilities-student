@@ -812,6 +812,11 @@ a.status_exam {
 .profile__header {
   width: 100%;
 }
+@media (max-width: 991px) {
+  .profile__header {
+    display: none;
+  }
+}
 .profile__header .cover__student {
   background-image: url("../../images/blog3.webp");
   background-position: center;

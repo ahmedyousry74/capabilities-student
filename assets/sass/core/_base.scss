@@ -894,7 +894,9 @@ a {
 
 .profile__header {
     width: 100%;
-
+    @media(max-width: 991px){
+        display: none;
+    }
     .cover__student {
         background-image: url('../../images/blog3.webp');
         background-position: center;
