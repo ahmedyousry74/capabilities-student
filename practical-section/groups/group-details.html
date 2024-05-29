@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../assets/sass/main.css" />
     <link rel="stylesheet" href="../../assets/css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="../../assets/css/datatable.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Capabilities Admin</title>
     <link rel="icon" href="../../assets/images/logo.png" type="image/x-icon" />
   </head>
@@ -348,84 +350,86 @@
         <div class="w-100">
             <div class="tabs__form w-100">
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-details-tab" data-bs-toggle="pill" data-bs-target="#pills-details" type="button" role="tab" aria-controls="pills-details" aria-selected="true">البيانات </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-teacher-tab" data-bs-toggle="pill" data-bs-target="#pills-teacher" type="button" role="tab" aria-controls="pills-teacher" aria-selected="true">المدرسين</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-videos-tab" data-bs-toggle="pill" data-bs-target="#pills-videos" type="button" role="tab" aria-controls="pills-videos" aria-selected="true">الفيديوهات</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-books-tab" data-bs-toggle="pill" data-bs-target="#pills-books" type="button" role="tab" aria-controls="pills-books" aria-selected="true">الكتب</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-exams-tab" data-bs-toggle="pill" data-bs-target="#pills-exams" type="button" role="tab" aria-controls="pills-exams" aria-selected="true">الأختبارات </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-duties-tab" data-bs-toggle="pill" data-bs-target="#pills-duties" type="button" role="tab" aria-controls="pills-duties" aria-selected="true">الواجبات </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-exercises-tab" data-bs-toggle="pill" data-bs-target="#pills-exercises" type="button" role="tab" aria-controls="pills-exercises" aria-selected="true">التمارين </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-grade-tab" data-bs-toggle="pill" data-bs-target="#pills-grade" type="button" role="tab" aria-controls="pills-grade" aria-selected="true">المواد المساعدة</button>
-                  </li>
+                  <div class="owl-carousel team_carousal owl-theme">
+                    <li class="nav-item" role="presentation" style="width: max-content;">
+                      <button class="nav-link active" id="pills-details-tab" data-bs-toggle="pill" data-bs-target="#pills-details" type="button" role="tab" aria-controls="pills-details" aria-selected="true">البيانات </button>
+                    </li>
+                    <li class="nav-item" role="presentation" style="width: max-content;">
+                      <button class="nav-link" id="pills-teacher-tab" data-bs-toggle="pill" data-bs-target="#pills-teacher" type="button" role="tab" aria-controls="pills-teacher" aria-selected="true">المدرسين</button>
+                    </li>
+                    <li class="nav-item" role="presentation" style="width: max-content;">
+                      <button class="nav-link" id="pills-videos-tab" data-bs-toggle="pill" data-bs-target="#pills-videos" type="button" role="tab" aria-controls="pills-videos" aria-selected="true">الفيديوهات</button>
+                    </li>
+                    <li class="nav-item" role="presentation" style="width: max-content;margin-inline-start: 15px">
+                      <button class="nav-link" id="pills-books-tab" data-bs-toggle="pill" data-bs-target="#pills-books" type="button" role="tab" aria-controls="pills-books" aria-selected="true">الكتب</button>
+                    </li>
+                    <li class="nav-item" role="presentation" style="width: max-content;">
+                      <button class="nav-link" id="pills-exams-tab" data-bs-toggle="pill" data-bs-target="#pills-exams" type="button" role="tab" aria-controls="pills-exams" aria-selected="true">الأختبارات </button>
+                    </li>
+                    <li class="nav-item" role="presentation" style="width: max-content;">
+                      <button class="nav-link" id="pills-duties-tab" data-bs-toggle="pill" data-bs-target="#pills-duties" type="button" role="tab" aria-controls="pills-duties" aria-selected="true">الواجبات </button>
+                    </li>
+                    <li class="nav-item" role="presentation" style="width: max-content;">
+                      <button class="nav-link" id="pills-exercises-tab" data-bs-toggle="pill" data-bs-target="#pills-exercises" type="button" role="tab" aria-controls="pills-exercises" aria-selected="true">التمارين </button>
+                    </li>
+                    <li class="nav-item" role="presentation" style="width: max-content;">
+                      <button class="nav-link" id="pills-grade-tab" data-bs-toggle="pill" data-bs-target="#pills-grade" type="button" role="tab" aria-controls="pills-grade" aria-selected="true">المواد المساعدة</button>
+                    </li>
+                  </div>
                 </ul>
                 <div class="tab-content form__details" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab" tabindex="0">
                       <div class="__details w-100">
                         <div class="row">
-                          <div class="col-md-3">
+                          <div class="col-md-3  col-6">
                               <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
                                   <p> اسم المجموعة  </p>
                                   <span> مجموعة 1 </span>
                               </div>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-3 col-6">
                               <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
                                   <p> عدد الطلاب </p>
                                   <span> 451</span>
                               </div>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-3 col-6">
                               <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
                                   <p> تاريخ البداية </p>
                                   <span> 27-11-2020 </span>
                               </div>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-3 col-6">
                               <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
                                   <p> تاريخ النهاية  </p>
                                   <span> 27 - 12 - 2020</span>
                               </div>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-3 col-6">
                               <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
                                   <p> الحالة </p>
                                   <span class="group_status continue text-center"> مستمرة </span>
                               </div>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-3 col-6">
                               <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
                                   <p> نوع المجموعة </p>
                                   <span class=""> فردى  </span>
                               </div>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-3 col-6">
                               <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
                                   <p> نوع الدرس </p>
                                   <span> تحصيلي  </span>
                               </div>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-3 col-6">
                               <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
                                   <p> السعر للطالب </p>
                                   <span> 220 ر.س </span>
                               </div>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-3 col-6">
                               <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
                                   <p> عدد الحصص </p>
                                   <span> 12</span>
@@ -500,25 +504,25 @@
                     <div class="tab-pane fade w-100" id="pills-videos" role="tabpanel" aria-labelledby="pills-videos-tab" tabindex="0" >
                     <div class="media__list">
                       <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                           <div class="media-item flex justify-center items-center flex-col gap-3">
                             <img src="../../assets/images/coverlettergraphic.jpg" height="200" width="200" alt="media" loading="lazy"  data-bs-toggle="modal" data-bs-target="#videoMediaModel">
                             <h3 class=""> فيديو 27-11-2020</h3>
                           </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3  col-6">
                           <div class="media-item flex justify-center items-center flex-col gap-3">
                             <img src="../../assets/images/coverlettergraphic.jpg" height="200" width="200" alt="media" loading="lazy"  data-bs-toggle="modal" data-bs-target="#videoMediaModel">
                             <h3 class=""> فيديو 28-11-2020</h3>
                           </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                           <div class="media-item flex justify-center items-center flex-col gap-3">
                             <img src="../../assets/images/coverlettergraphic.jpg" height="200" width="200" alt="media" loading="lazy"  data-bs-toggle="modal" data-bs-target="#videoMediaModel">
                             <h3 class=""> فيديو 29-11-2020</h3>
                           </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                           <div class="media-item flex justify-center items-center flex-col gap-3">
                             <img src="../../assets/images/coverlettergraphic.jpg" height="200" width="200" alt="media" loading="lazy"  data-bs-toggle="modal" data-bs-target="#videoMediaModel">
                             <h3 class=""> فيديو 30-11-2020</h3>
@@ -744,6 +748,7 @@
     <script src="../../assets/js/jquery.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/datatable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         $(document).ready(function () {
@@ -1013,5 +1018,34 @@
             });
           });
         </script>
+        
+<script>
+  $('.owl-carousel.team_carousal').owlCarousel({
+  nav: false,
+  dots: false,
+  margin: 5,
+  responsiveClass: true,
+  ltr: true,
+  rtl: true,
+  responsive: {
+      0: {
+          items: 4,
+          nav: true
+      },
+      350: {
+          items: 5,
+          nav: true
+      },
+      600: {
+          items: 6,
+          nav: false
+      },
+      1000: {
+          items: 9,
+          nav: true,
+      }
+  }
+})
+</script>
   </body>
 </html>

@@ -1068,10 +1068,25 @@ aside {
      object-fit: cover;
   height: 300px;
 }
+@media (max-width: 767px) {
+  .media-item img {
+    height: 150px;
+  }
+}
 .media-item h3 {
   padding: 15px 10px;
   font-size: 17px !important;
   margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .media-item h3 {
+    margin-top: 5px;
+    padding: 8px 5px;
+  }
+}
+
+.owl-nav, .owl-dots {
+  display: none;
 }
 
 aside {
@@ -1910,10 +1925,12 @@ aside .logout__ button path {
   color: #050505 !important;
   font-size: 15px;
   font-weight: 400;
+  padding: 5px;
 }
 .tabs__form ul li button.active {
   background-color: #0D5FF9 !important;
   color: #fff !important;
+  padding: 5px;
 }
 .tabs__form .form__details {
   margin-top: 35px;
