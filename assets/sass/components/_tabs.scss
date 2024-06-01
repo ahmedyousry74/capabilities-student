@@ -9,15 +9,25 @@
         li {
             button {
                 background-color: transparent;
-                border: 0;
+                border: 1px solid $primary-color;
                 color: $primary-color !important;
                 font-size: 15px;
                 font-weight: 400;
-                padding: 5px;
+                padding: 5px 15px;
+                border-radius: 25px !important;
+                svg{
+                    margin-inline-end: 5px;
+                }
                 &.active {
                     background-color: $second-color !important;
+                    border: 1px solid $second-color;
+                    border-radius: 25px !important;
+                    padding: 5px 15px;
                     color: #fff !important;
-                    padding: 5px;
+                    svg,path{
+                        color: #fff !important;
+                        fill: #fff !important;
+                    }
                 }
             }
         }

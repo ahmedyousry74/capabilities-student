@@ -1921,16 +1921,26 @@ aside .logout__ button path {
 }
 .tabs__form ul li button {
   background-color: transparent;
-  border: 0;
+  border: 1px solid #050505;
   color: #050505 !important;
   font-size: 15px;
   font-weight: 400;
-  padding: 5px;
+  padding: 5px 15px;
+  border-radius: 25px !important;
+}
+.tabs__form ul li button svg {
+  margin-inline-end: 5px;
 }
 .tabs__form ul li button.active {
   background-color: #0D5FF9 !important;
+  border: 1px solid #0D5FF9;
+  border-radius: 25px !important;
+  padding: 5px 15px;
   color: #fff !important;
-  padding: 5px;
+}
+.tabs__form ul li button.active svg, .tabs__form ul li button.active path {
+  color: #fff !important;
+  fill: #fff !important;
 }
 .tabs__form .form__details {
   margin-top: 35px;
