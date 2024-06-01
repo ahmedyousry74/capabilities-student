@@ -346,27 +346,64 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-  
+    
         // Define your events here
         var events = [
           {
-            title: 'Event 1',
-            start: '2024-05-29T10:00:00', // YYYY-MM-DDTHH:mm:ss format
-            end: '2024-05-29T12:00:00' // Optional
+            title: 'محاضرة رياضيات',
+            start: '2024-06-12T10:00:00',
+            end: '2024-06-14T12:00:00',
+            url: 'https://www.zoom.com',
+            extendedProps: {
+              material: 'رياضيات',
+              teacher: 'احمد'
+            }
           },
           {
-            title: 'Event 2',
-            start: '2024-05-30T14:00:00',
-            end: '2024-05-30T15:30:00'
+            title: 'محاضرة أونلاين الاّن',
+            start: '2024-06-18T14:00:00',
+            end: '2024-06-20T15:30:00',
+            url: 'https://www.zoom.com',
+            extendedProps: {
+              material: 'رياضيات',
+              teacher: 'احمد'
+            }
           },
-          // Add more events as needed
         ];
-  
+    
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth',
-          events: events
-        });
-  
+      initialView: 'dayGridMonth',
+      events: events,
+      eventContent: function(arg) {
+        let title = document.createElement('div');
+        title.classList.add('fc-event-title');
+        title.innerHTML = '<b>' + arg.event.title + '</b>';
+        
+        let time = document.createElement('div');
+        time.classList.add('fc-event-time');
+        time.innerHTML = 'Time: ' + arg.event.start.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}) + ' - ' + arg.event.end.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+        
+        let material = document.createElement('div');
+        material.classList.add('fc-event-material');
+        material.innerHTML = 'Material: ' + arg.event.extendedProps.material;
+        
+        let teacher = document.createElement('div');
+        teacher.classList.add('fc-event-teacher');
+        teacher.innerHTML = 'Teacher: ' + arg.event.extendedProps.teacher;
+        
+        let arrayOfDomNodes = [ title, time, material, teacher ];
+
+        return { domNodes: arrayOfDomNodes };
+      },
+      eventClick: function(info) {
+        info.jsEvent.preventDefault(); // Prevent default browser behavior
+        if (info.event.url) {
+          window.location.href = info.event.url; // Redirect to the URL
+        }
+      }
+    });
+
+    
         calendar.render();
       });
     </script>
