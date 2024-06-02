@@ -328,52 +328,7 @@
             </ul>
           </div>
         </div>
-        <div
-          class="header__page d-flex justify-content-between align-items-start flex-row flex-wrap w-100"
-        >
-          <div class="title_page">
-            <h2>المدفوعات</h2>
-            <nav>
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href=""><i class="mdi mdi-home-outline"></i> الرئيسية </a>
-                </li>  
-                <li class="breadcrumb-item active" aria-current="page">
-                  المدفوعات
-                </li>
-              </ol>
-            </nav>
-          </div>
-   
-        </div>
         <div class="w-100">
-          <form class="filter__action w-100 flex-lg-nowrap flex-wrap gap-2">
-            <div
-              class="d-flex justify-content-start align-items-center flex-row gap-3 w-100 flex-lg-nowrap flex-wrap"
-            >
-              <div
-                class="d-flex justify-content-start align-items-start flex-column gap-1"
-              >
-                <label for=""> المجموعة </label>
-                <select
-                  name="class"
-                  id="class"
-                  class="form-select form-control"
-                  aria-label="Default select example"
-                  aria-placeholder="Segmentation*"
-                >
-                  <option selected disabled>المجموعة</option>
-                  <option value="">المجموعة 1</option>
-                  <option value="">المجموعة 2</option>
-                  <option value="">المجموعة 3</option>
-                  <option value="">المجموعة 4</option>
-                </select>
-              </div>
-            </div>
-            <div class="filter_btn">
-              <button type="submit">فلتر</button>
-            </div>
-          </form>
           <table id="paymentsTable" class="display" style="width: 100%">
             <thead>
               <tr>
@@ -405,8 +360,7 @@
     <script>
       $(document).ready(function () {
         var table = $("#paymentsTable").DataTable({
-          dom:
-            "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
+          dom: 
             "<'row'<'col-sm-12 table_layout'tr>>" +
             "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
           lengthMenu: [
@@ -414,10 +368,10 @@
             [5, 10, 25, 50, "All"],
           ],
           responsive: true,
-scrollX: true,
+          scrollX: true,
           language: {
-            search: "_INPUT_",
-            searchPlaceholder: "بحث",
+            //search: "_INPUT_",
+            //searchPlaceholder: "بحث",
             lengthMenu: "_MENU_",
             paginate: {
               first: "الأول",
