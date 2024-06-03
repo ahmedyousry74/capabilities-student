@@ -2136,6 +2136,9 @@ aside .logout__ button path {
   overflow-x: scroll;
   padding-bottom: 7px;
 }
+.tabs__form ul::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
 .tabs__form ul li button {
   background-color: transparent;
   border: 1px solid #050505;
