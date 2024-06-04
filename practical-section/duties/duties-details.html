@@ -315,24 +315,6 @@
           </ul>
         </div>
       </div>
-      <div
-      class="header__page d-flex justify-content-between align-items-start flex-row flex-wrap w-100"
-    >
-      <div class="title_page">
-        <h2>الواجبات</h2>
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href=""><i class="mdi mdi-home-outline"></i> الرئيسية </a>
-            </li>
-              
-            <li class="breadcrumb-item active" aria-current="page">
-              الواجبات
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
     <div class="__details w-100">
         <div class="row">
           <div class="col-md-3 col-6">
@@ -486,8 +468,7 @@
     <script>
         $(document).ready(function () {
           var table = $("#allDutiesTable").DataTable({
-            dom:
-              "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
+            dom: 
               "<'row'<'col-sm-12 table_layout'tr>>" +
               "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
             lengthMenu: [
@@ -514,8 +495,7 @@
       <script>
         $(document).ready(function () {
           var table = $("#todayDutiesTable").DataTable({
-            dom:
-              "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
+            dom: 
               "<'row'<'col-sm-12 table_layout'tr>>" +
               "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
             lengthMenu: [

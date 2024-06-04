@@ -8,8 +8,17 @@
     scroll-behavior: smooth;
     font-family: 'cairo', sans-serif;
 }
-
+html{
+    @media(max-width: 580px){
+        height: 100%;
+    }
+}
 body {
+    background-image: url('../../images/home-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
     direction: rtl;
     background-color: #fff !important;
     overflow-x: hidden !important;
