@@ -462,8 +462,8 @@ p {
   font-size: 15px;
   font-weight: 500;
 }
-.login__page form button,
-.login__page form a {
+.login__page form button.button_login,
+.login__page form a.button_login {
   background: #0D5FF9;
   border: 1px solid #0D5FF9;
   padding: 8px 25px;
@@ -1314,6 +1314,14 @@ hr {
   font-size: 13px;
 }
 
+@media (max-width: 991px) {
+  .login__page {
+    background-image: none !important;
+  }
+  .login__page .login__info {
+    display: none;
+  }
+}
 aside {
   padding: 10px 20px;
   background-color: #F9FAFB;

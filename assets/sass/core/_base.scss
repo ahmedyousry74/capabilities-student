@@ -485,8 +485,8 @@ p {
             font-weight: 500;
         }
 
-        button,
-        a {
+        button.button_login,
+        a.button_login {
             background: $second-color;
             border: 1px solid $second-color;
             padding: 8px 25px;
@@ -1424,4 +1424,13 @@ hr{
     border-radius: 50%;
     color: #fff;
     font-size: 13px;
+}
+
+@media(max-width: 991px){
+    .login__page{
+        background-image: none !important;
+        .login__info{
+            display: none;
+        }
+    }
 }
