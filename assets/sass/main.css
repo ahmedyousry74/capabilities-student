@@ -1486,14 +1486,29 @@ hr {
   }
 }
 
-html {
-  height: -moz-max-content;
-  height: max-content;
+@media (max-width: 767px) {
+  html {
+    height: -webkit-fill-available;
+  }
 }
 
 .replay__messages {
   background: #fff;
   padding: 8px;
+}
+
+.whatsapp__icon {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  z-index: 999;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25D366;
 }
 
 aside {
@@ -2336,7 +2351,7 @@ aside .logout__ button path {
   padding-bottom: 7px;
 }
 .tabs__form ul::-webkit-scrollbar-thumb {
-  background-color: #fff;
+  background-color: transparent;
 }
 .tabs__form ul li button {
   background-color: transparent;

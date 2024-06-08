@@ -1580,9 +1580,24 @@ body{
     }
 }
 html{
-    height: max-content;
+    @media(max-width: 767px){
+        height: -webkit-fill-available;
+    }
 }
 .replay__messages{
     background: #fff;
     padding: 8px;
+}
+.whatsapp__icon {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 999;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25D366;
 }
