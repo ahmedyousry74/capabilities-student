@@ -1322,6 +1322,28 @@ hr {
     display: none;
   }
 }
+.material__table {
+  padding: 5px 20px;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+}
+.material__table.one {
+  background: #ffaf40;
+}
+.material__table.two {
+  background: #ff6666;
+}
+.material__table.three {
+  background: #95cc47;
+}
+@media (max-width: 580px) {
+  .material__table {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
 aside {
   padding: 10px 20px;
   background-color: #F9FAFB;
@@ -1552,6 +1574,12 @@ aside .logout__ button path {
   font-size: 14px;
   font-weight: 500;
   text-align: center !important;
+}
+@media (max-width: 580px) {
+  .table_layout table tbody td {
+    padding: 5px !important;
+    font-size: 12px !important;
+  }
 }
 .table_layout table .sorting_1 {
   box-shadow: none !important;

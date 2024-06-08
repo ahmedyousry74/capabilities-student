@@ -1434,3 +1434,22 @@ hr{
         }
     }
 }
+.material__table{
+    padding: 5px 20px;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    &.one{
+        background: #ffaf40;
+    }
+    &.two{
+        background: #ff6666;
+    }
+    &.three{
+        background: #95cc47;
+    }
+    @media(max-width: 580px){
+        padding: 5px;
+        font-size: 12px;
+    }
+}
