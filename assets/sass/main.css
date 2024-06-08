@@ -1348,7 +1348,7 @@ hr {
 }
 @media (max-width: 580px) {
   .material__table {
-    padding: 5px;
+    padding: 3px;
     font-size: 12px;
   }
 }
