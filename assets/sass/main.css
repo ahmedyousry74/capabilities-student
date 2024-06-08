@@ -1434,6 +1434,7 @@ hr {
 @media (max-width: 580px) {
   .notification-menu {
     left: -10px !important;
+    width: 280px;
   }
 }
 
