@@ -518,25 +518,25 @@
                         <div class="col-md-3 col-6">
                           <div class="media-item flex justify-center items-center flex-col gap-3">
                             <img src="../../assets/images/coverlettergraphic.jpg" height="200" width="200" alt="media" loading="lazy"  data-bs-toggle="modal" data-bs-target="#videoMediaModel">
-                            <h3 class=""> فيديو 27-11-2020</h3>
+                            <h3 class="">  27-11-2020</h3>
                           </div>
                         </div>
                         <div class="col-md-3  col-6">
                           <div class="media-item flex justify-center items-center flex-col gap-3">
                             <img src="../../assets/images/coverlettergraphic.jpg" height="200" width="200" alt="media" loading="lazy"  data-bs-toggle="modal" data-bs-target="#videoMediaModel">
-                            <h3 class=""> فيديو 28-11-2020</h3>
+                            <h3 class="">  28-11-2020</h3>
                           </div>
                         </div>
                         <div class="col-md-3 col-6">
                           <div class="media-item flex justify-center items-center flex-col gap-3">
                             <img src="../../assets/images/coverlettergraphic.jpg" height="200" width="200" alt="media" loading="lazy"  data-bs-toggle="modal" data-bs-target="#videoMediaModel">
-                            <h3 class=""> فيديو 29-11-2020</h3>
+                            <h3 class="">  29-11-2020</h3>
                           </div>
                         </div>
                         <div class="col-md-3 col-6">
                           <div class="media-item flex justify-center items-center flex-col gap-3">
                             <img src="../../assets/images/coverlettergraphic.jpg" height="200" width="200" alt="media" loading="lazy"  data-bs-toggle="modal" data-bs-target="#videoMediaModel">
-                            <h3 class=""> فيديو 30-11-2020</h3>
+                            <h3 class="">  30-11-2020</h3>
                           </div>
                         </div>
                       </div>
@@ -943,6 +943,7 @@
       </script>
       <script>
         $(document).ready(function () {
+          var isSmallScreen = $(window).width() <= 500;
           var table = $("#exerciseTable").DataTable({
             dom:
               "<'row'<'col-sm-12 table_layout'tr>>" +
@@ -952,6 +953,7 @@
               [5, 10, 25, 50, "All"],
             ],
             responsive: true,
+            scrollX: isSmallScreen, 
             language: {
               //search: "_INPUT_",
               //searchPlaceholder: "بحث",
@@ -966,6 +968,11 @@
           });
           $(".dataTables_filter input").addClass("form-control");
           $(".dataTables_length select").addClass("form-select");
+          $(window).resize(function () {
+          if ($(window).width() <= 500) {
+              table.columns.adjust().draw();
+            }
+          });
         });
       </script>
   
