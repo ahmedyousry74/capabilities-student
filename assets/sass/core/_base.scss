@@ -1437,7 +1437,8 @@ hr{
 
 @media(max-width: 991px){
     .login__page{
-        background-image: none !important;
+        // background-image: none !important;
+        background: linear-gradient(148deg, rgba(2, 0, 36, 0.7848273098) 0%, #eab121bb 100%);
         .login__info{
             display: none;
         }
@@ -1564,3 +1565,23 @@ hr{
     color: #8f8e8e;
     font-size: 12px;
   }
+.edit__profile{
+    padding: 8px 20px;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    background-color: #0D5FF9;
+}
+
+body{
+    @media(max-width: 767px){
+        background-image: url('/assets/images/home-bg.jpg');
+    }
+}
+html{
+    height: max-content;
+}
+.replay__messages{
+    background: #fff;
+    padding: 8px;
+}
